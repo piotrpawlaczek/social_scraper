@@ -1,8 +1,8 @@
 Social scraper                                                                                                          
 ==============
 
-Retrieves many user profiles from social networks simulataneusly
-Send `spiders` to the web and gather their content therein!
+Retrieves user profiles from social networks simulataneusly.
+Send `spiders` to the web and gather social content therein!
 
 Install                                                                                                          
 -------------                                                                                                           
