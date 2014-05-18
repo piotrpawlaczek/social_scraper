@@ -4,6 +4,7 @@ from social_scraper.items import SocialScraperItem
 from social_scraper.spiders.twitter import TwitterSpider
 from social_scraper.spiders.fb import FacebookSpider
 
+from twython.exceptions import TwythonAuthError
 
 class SocialSpider(object):
     expected_length = 7
@@ -73,9 +74,13 @@ class TwitterSpiderTest(SocialSpider, unittest.TestCase):
         Test with regards to current api spec
         """
         self.spider.profile = None
-        response = self.spider.api_call('baracobama')
-        results = self.spider.parse(response)
-        self._test_item_results(results)
+        try:
+            response = self.spider.api_call('baracobama')
+        except TwythonAuthError:
+            return
+        else:
+            results = self.spider.parse(response)
+            self._test_item_results(results)
 
 
 if __name__ == '__main__':
