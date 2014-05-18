@@ -16,7 +16,7 @@ setup(
                      'initialy makde to retrieve structured content '
                      'from social media like facebook, twitter, linkedin etc',
     install_requires=['scrapy', 'celery', # backend + message queue
-                      'flask','flask-restful', # waf
+                      'flask-restful', # waf
                       'facebook-sdk', 'Twython'], # api clientes
     scripts = ['bin/start_scraper'],
 )
