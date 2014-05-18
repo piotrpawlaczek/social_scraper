@@ -2,7 +2,7 @@ Social scraper
 ==============
 
 Retrieves many user profiles from social networks simulataneusly
-> Send `spiders` to the web and gather their content therein
+Send `spiders` to the web and gather their content therein!
 
 Install                                                                                                          
 -------------                                                                                                           
@@ -49,11 +49,11 @@ Scrapyd allows deploying spiders, starting and stopping them using JSON web serv
 Architecture
 -------------
 ![alt tag](http://doc.scrapy.org/en/latest/_images/scrapy_architecture.png)
+
 Job requests (spiders) are initialized from webserver using celery and send to `scrapy` ecosystem
 
 Written with Twisted, a popular event-driven networking framework for Python. Thus, it’s implemented using a non-blocking (aka asynchronous) code for for concurrency.
 
-
 Todo
 ----
-- Linkedin 
+- Linkedin spider
