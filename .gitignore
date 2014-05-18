@@ -54,3 +54,6 @@ docs/_build/
 
 # Emacs and backups
 *.*~
+
+# Ignore production settings
+social_scraper/settings_prod.py
