@@ -41,8 +41,8 @@ curl -i http://localhost:8080/api/v0.1/users/facebook/barackobama
 you may also access `user_profile` from `js client` or `web browser`
 
 to just run spider, type:
-- scrapy runspider twitter -A <username>
-- scrapy runspider facebook -A <username>
+- scrapy runspider twitter -A `<username>`
+- scrapy runspider facebook -A `<username>`
 
 Deploy
 ------
