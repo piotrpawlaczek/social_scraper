@@ -6,6 +6,7 @@ from social_scraper.spiders.fb import FacebookSpider
 
 from twython.exceptions import TwythonAuthError
 
+
 class SocialSpider(object):
     expected_length = 7
 
