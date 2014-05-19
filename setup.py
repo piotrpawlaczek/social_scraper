@@ -17,6 +17,6 @@ setup(
                      'from social media like facebook, twitter, linkedin etc',
     install_requires=['scrapy', 'celery', # backend + message queue
                       'flask-restful', # waf
-                      'facebook-sdk', 'Twython'], # api clientes
+                      'facebook-sdk', 'Twython'], # api clients
     scripts = ['bin/start_scraper'],
 )
