@@ -75,7 +75,7 @@ class TwitterSpiderTest(SocialSpider, unittest.TestCase):
         """
         self.spider.profile = None
         try:
-            response = self.spider.api_call('baracobama')
+            response = self.spider.api_call('barackobama')
         except TwythonAuthError:
             return
         else:
