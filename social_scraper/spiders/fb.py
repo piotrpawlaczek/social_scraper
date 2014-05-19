@@ -8,11 +8,11 @@ from base import SocialSpider
 
 class FacebookSpider(SocialSpider):
     name = 'facebook'
-    start_usernames = ['baracobama']
+    start_usernames = ['barackobama']
 
     def api_call(self, username):
         api = facebook.GraphAPI(FACEBOOK_TOKEN)
-        args = {'fields' : 'id,name,picture,about'}
+        args = {'fields': 'id,name,picture,about'}
         profile = api.get_object(username, **args)
         profile.update(
             api.fql(
